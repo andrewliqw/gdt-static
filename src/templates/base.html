@@ -5,8 +5,48 @@
         <meta http-equiv="x-ua-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{ STATIC_URL }}lib/jquery/jquery-1.12.3.min.js"></script>
+
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/bootstrap/bootstrap3.3.7/css/bootstrap.min.css">
+
+        <!-- bootstrap javascript must be after jquery -->
+        <script src="{{ STATIC_URL }}lib/bootstrap/bootstrap3.3.7/js/bootstrap.min.js"></script>
+
+        {% comment %}
+        <!-- jquery match height plugin-->
+        <script src="{{ STATIC_URL }}lib/jquery-match-height/0.7.0/jquery.matchHeight-min.js"></script>
+        {% endcomment %}
+
+        <!-- jquery plugin camera -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}lib/jquery_camera/camera.css">
+
+        {% block localcss %}
+        <!-- local css -->
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css">
+        {% endblock %}
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <title>澳洲龙行天下旅游公司｜澳洲龙行天下旅行社｜Galaxy Dragon Travel Pty Ltd</title>
     </head>
 
     <body>
+        {% block navbar %}
+        {% include "./navbar_t.html" %}
+        {% endblock %}
+
+        {% block au_nz_photo_set %}
+        {% endblock %}
+
+        {% block localsript %}
+        {% endblock %}
     </body>
 </html>
