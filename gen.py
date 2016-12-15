@@ -76,5 +76,9 @@ django_engine = Engine(
 #         print(django_engine.get_template("index.html").render(context), file=f)
 
 args.template_file = os.path.abspath(args.template_file)
-context = Context({"STATIC_URL": os.path.join("./static", "")})
+
+context = Context({
+    "STATIC_URL": os.path.join("./static", ""),
+    "CURRENT_FILE": os.path.basename(args.template_file),
+})
 print(django_engine.get_template(args.template_file).render(context))
