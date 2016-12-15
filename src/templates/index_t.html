@@ -1,1 +1,88 @@
 {% extends "./base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-6">
+            <p>我们提供澳洲（包括澳大利亚和新西兰）境内及周边国家地区（斐济，巴厘岛）的各种与旅游相关的服务：</p>
+            <ul>
+                <li>私人定制服务</li>
+                <li>澳洲顶级高尔夫球场预订</li>
+                <li>插班留学</li>
+            </ul>
+        </div>
+        <!-- national flag: the photo from http://www.crwflags.com/fotw/flags/country.html -->
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4">
+                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_australia.gif" alt="australia flag"></a>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_newzealand.gif" alt="new zealand flag"></a>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_fiji.gif" alt="fiji flag"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="bg-primary text-primary">
+
+    <h1 class="text-main">私人定制旅游服务</h1>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <!-- here we use jquery camera wrap library -->
+            <div class="camera_wrap">
+                <!-- first picture -->
+                <div data-src="{{ STATIC_URL }}img/sydney-harbour-bridge-opera-house.jpg">
+                    <div class="camera_caption">澳大利亚悉尼歌剧院和海港大桥</div>
+                </div>
+
+                <!-- second picture -->
+                <div data-src="{{ STATIC_URL }}img/canberra-parliament-house.jpg">
+                    <div class="camera_caption">澳大利亚首都堪培拉国会大厦</div>
+                </div>
+
+                <!-- third picture -->
+                <div data-src="{{ STATIC_URL }}img/Melbourne-12-Apostles.jpg">
+                    <div class="camera_caption">澳大利亚墨尔本十二门徒</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-4 product-thumbnail">
+                    <h2>悉尼墨尔本6晚</h2>
+                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                    <a class="btn btn-primary" href="#">查看详情</a>
+                </div>
+                <div class="col-sm-4 product-thumbnail">
+                    <h2>悉尼墨尔本6晚</h2>
+                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                    <a class="btn btn-primary" href="#">查看详情</a>
+                </div>
+                <div class="col-sm-4 product-thumbnail">
+                    <h2>悉尼墨尔本6晚</h2>
+                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                    <a class="btn btn-primary" href="#">查看详情</a>
+                </div>
+                <div class="col-sm-4 product-thumbnail">
+                    <h2>悉尼墨尔本6晚</h2>
+                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                    <a class="btn btn-primary" href="#">查看详情</a>
+                </div>
+                <div class="col-sm-4 product-thumbnail">
+                    <h2>悉尼墨尔本6晚</h2>
+                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                    <a class="btn btn-primary" href="#">查看详情</a>
+                </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}

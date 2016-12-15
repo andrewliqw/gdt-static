@@ -1,4 +1,7 @@
 /* set navbar background color red and all of text are white */
+.text-main {
+  color: rgb(255, 0, 0);
+}
 
 #nav {
   /*background-color: rgb(242, 92, 39);*/
@@ -38,6 +41,13 @@
   /*color: #555;*/
   /*background-color: #e7e7e7;*/
   background-color: black;
+}
+
+.product-thumbnail {
+  border: solid 1px #eee;
+}
+.product-thumbnail a {
+  margin-bottom: 5px;
 }
 
 .carousel-inner .item img {
