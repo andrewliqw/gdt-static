@@ -3,37 +3,9 @@
 {% block content %}
 <div class="container">
 
+    <!-- photo set -->
     <div class="row">
-        <div class="col-xs-6">
-            <p>我们提供澳洲（包括澳大利亚和新西兰）境内及周边国家地区（斐济，巴厘岛）的各种与旅游相关的服务：</p>
-            <ul>
-                <li>私人定制服务</li>
-                <li>澳洲顶级高尔夫球场预订</li>
-                <li>插班留学</li>
-            </ul>
-        </div>
-        <!-- national flag: the photo from http://www.crwflags.com/fotw/flags/country.html -->
-        <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-6 col-sm-4">
-                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_australia.gif" alt="australia flag"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_newzealand.gif" alt="new zealand flag"></a>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <a href="#" class="thumbnail"><img src="{{ STATIC_URL }}img/flag_fiji.gif" alt="fiji flag"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr class="bg-primary text-primary">
-
-    <h1 class="text-main">私人定制旅游服务</h1>
-
-    <div class="row">
-        <div class="col-sm-4">
+        <div class="col-xs-10 col-xs-offset-1">
             <!-- here we use jquery camera wrap library -->
             <div class="camera_wrap">
                 <!-- first picture -->
@@ -52,37 +24,95 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="col-sm-8">
+    <hr>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <p>我们是<span class="text-main">澳洲的地接</span>，提供澳洲（包括澳大利亚和新西兰）境内及周边国家地区（斐济，巴厘岛）的各种与旅游相关的服务：</p>
+            <ul>
+                <li>私人定制服务</li>
+                <li>澳洲顶级高尔夫球场预订</li>
+                <li>学生插班留学</li>
+                <li>全球机票预订</li>
+            </ul>
+        </div>
+        <!-- national flag: the photo from http://www.crwflags.com/fotw/flags/country.html -->
+        <div class="col-xs-6">
             <div class="row">
-                <div class="col-sm-4 product-thumbnail">
-                    <h2>悉尼墨尔本6晚</h2>
-                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
-                    <a class="btn btn-primary" href="#">查看详情</a>
+                <div class="col-xs-6 col-sm-4">
+                    <p class="thumbnail"><img src="{{ STATIC_URL }}img/flag_australia.gif" alt="australia flag"></a>
                 </div>
-                <div class="col-sm-4 product-thumbnail">
-                    <h2>悉尼墨尔本6晚</h2>
-                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
-                    <a class="btn btn-primary" href="#">查看详情</a>
+                <div class="col-xs-6 col-sm-4">
+                    <p class="thumbnail"><img src="{{ STATIC_URL }}img/flag_newzealand.gif" alt="new zealand flag"></a>
                 </div>
-                <div class="col-sm-4 product-thumbnail">
-                    <h2>悉尼墨尔本6晚</h2>
-                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
-                    <a class="btn btn-primary" href="#">查看详情</a>
+                <div class="col-xs-6 col-sm-4">
+                    <p class="thumbnail"><img src="{{ STATIC_URL }}img/flag_fiji.gif" alt="fiji flag"></a>
                 </div>
-                <div class="col-sm-4 product-thumbnail">
-                    <h2>悉尼墨尔本6晚</h2>
-                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
-                    <a class="btn btn-primary" href="#">查看详情</a>
-                </div>
-                <div class="col-sm-4 product-thumbnail">
-                    <h2>悉尼墨尔本6晚</h2>
-                    <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
-                    <a class="btn btn-primary" href="#">查看详情</a>
-                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <h1 class="text-main">私人定制旅游服务</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <h2>悉尼墨尔本6晚</h2>
+                <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
         </div>
 
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <h2>悉尼墨尔本6晚</h2>
+                <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <h2>悉尼墨尔本6晚</h2>
+                <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <h2>悉尼墨尔本6晚</h2>
+                <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <h2>悉尼墨尔本6晚</h2>
+                <p><del>4280澳元起</del> <span class="text-main">3820澳元起</span></p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
     </div>
+
+    <hr>
+    <h1>关于我们</h1>
+    <p>澳洲龙行天下旅游公司(Galaxy Dragon Travel Pty Ltd)，是一家面向全世界华人提供旅游服务的国际公司。总部设在澳大利亚的悉尼，位于当地华人比例最高、热闹繁华的好市围市(Hurstville)。</p>
+    <h3>我们的使命</h3>
+    <p class="text-main">以客户为中心，以奋斗者为本，长期坚持艰苦奋斗，服务于世界上每位华人游客。</p>
+    <p>以客户为中心是长期艰苦奋斗的方向；艰苦奋斗是实现以客户为中心的手段和途径；以奋斗者为本是驱动长期艰苦奋斗的活力源泉，是保持以客户为中心的内在动力。</p>
+    <h3>我们的服务</h3>
+    <p>我们目前为每位来澳洲（包括澳大利亚和新西兰）境内及周边国家地区（斐济，巴厘岛）的华人游客提供以下各种与旅游相关的服务：</p>
+    <ul>
+        <li>私人定制服务</li>
+        <li>澳洲顶级高尔夫球场预订</li>
+        <li>学生插班留学</li>
+        <li>全球机票预订</li>
+    </ul>
+    <p>此外，我们还为澳洲本地华人出境游的游客提供欧洲旅游、欧洲购物、邮轮以及中国旅游的服务。</p>
+    <p>除了提供传统的旅行服务外，我们正在整合互联网资源，打造一个互联网旅游平台，向全世界的华人提供包括旅游路线预订、酒店预订、机票预订、旅游度假、商旅管理及旅游资讯在内的全方位旅行服务。利用互联网的方便快捷，结合我们自身作为地接社的服务优势，让我们的客户体验完美的线上和线下服务。</p>
 </div>
 {% endblock %}

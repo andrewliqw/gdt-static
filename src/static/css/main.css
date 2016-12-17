@@ -1,13 +1,15 @@
-/* set navbar background color red and all of text are white */
+/* main color for whole website */
 .text-main {
   color: rgb(255, 0, 0);
 }
+
+/* set navbar background color red and all of text are white */
 
 #nav {
   /*background-color: rgb(242, 92, 39);*/
   background-color: rgb(255, 0, 0);
   color: white;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 
 #nav a, #nav li {
@@ -18,7 +20,7 @@
  * logo size: 100x75
  */
 .navbar-brand {
-  padding: 18px;
+  padding-top: 18px;
   height: 75px;
 }
 
@@ -43,21 +45,42 @@
   background-color: black;
 }
 
+/*
 .product-thumbnail {
   border: solid 1px #eee;
 }
 .product-thumbnail a {
   margin-bottom: 5px;
 }
+*/
 
-.carousel-inner .item img {
-  width: 100%;
-  /*height: 600px;*/
-
+/* In travel industry, attraction name is put inside 【 】*/
+.travel-bracket::before {
+  content: "【";
 }
 
-.carousel-inner{
-  /*width: 800px;*/
-  height: 600px;
-  /*height: 600px;*/
+.travel-bracket::after {
+  content: "】";
+}
+
+.travel-bracket, .travel-attraction {
+  color: #f25c27;
+}
+
+.travel-bracket::before,
+.travel-bracket::after {
+  color: black;
+}
+
+/* make img display block */
+.thumbnail p > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div[class*="equalheight"] {
+  margin-bottom: 10px;
 }

@@ -15,11 +15,6 @@
         <!-- bootstrap javascript must be after jquery -->
         <script src="{{ STATIC_URL }}lib/bootstrap/bootstrap3.3.7/js/bootstrap.min.js"></script>
 
-        {% comment %}
-        <!-- jquery match height plugin-->
-        <script src="{{ STATIC_URL }}lib/jquery-match-height/0.7.0/jquery.matchHeight-min.js"></script>
-        {% endcomment %}
-
         <!-- jquery plugin camera -->
         <link rel="stylesheet" href="{{ STATIC_URL }}lib/jquery_camera/camera.css">
 
@@ -85,13 +80,8 @@
         </script>
         {% endblock %}
 
-        <script>
-            $(document).ready(function(){
-              $(".nav a").on("click", function(){
-                $(".nav").find(".active").removeClass("active");
-                $(this).parent().addClass("active");
-              });
-            });
-        </script>
+        {% block jquerymatchheight %}
+        <script src="{{ STATIC_URL }}lib/jquery-match-height/0.7.0/jquery.matchHeight-min.js"></script>
+        {% endblock %}
     </body>
 </html>

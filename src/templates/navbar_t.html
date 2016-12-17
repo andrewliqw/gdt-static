@@ -16,9 +16,9 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav">
                 <li{% if CURRENT_FILE == "index_t.html" %} class="active"{% endif %}><a href="./index.html">首页</a></li>
-                <li><a href="#">私人定制</a></li>
-                <li><a href="#">高尔夫</a></li>
-                <li><a href="#">插班留学</a></li>
+                <li{% if CURRENT_FILE == "personalized_t.html" %} class="active"{% endif %}><a href="personalized.html">私人定制</a></li>
+                <li{% if CURRENT_FILE == "golf_t.html" %} class="active"{% endif %}><a href="golf.html">高尔夫</a></li>
+                <li{% if CURRENT_FILE == "study_t.html" %} class="active"{% endif %}><a href="study.html">插班留学</a></li>
                 <li{% if CURRENT_FILE == "contact_t.html" %} class="active"{% endif %}><a href="./contact.html">联系我们</a></li>
             </ul>
         </div>
