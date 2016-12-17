@@ -1,0 +1,107 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>高尔夫产品</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>悉尼高尔夫团</h3>
+            <div class="thumbnail">
+                <p class="equalheight-1"><img src="{{ STATIC_URL }}img/p_sydney.jpg" alt=""></p>
+                <p class="equalheight-1-caption">悉尼顶级高尔夫球场，全程高端奔驰商务车和专业导游为你服务</p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3>墨尔本高尔夫团</h3>
+            <div class="thumbnail">
+                <p class="equalheight-1"><img src="{{ STATIC_URL }}img/activity.jpg" alt=""></p>
+                <p class="equalheight-1-caption">墨尔本顶级高尔夫球场，全程高端奔驰商务车和专业导游为你服务</p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+    </div>
+    <p>如需私人订制高尔夫产品，请<a class="travel-attraction" href="./contact.html">联系我们</a>。</p>
+
+    <br><br>
+    <h1>澳大利亚顶级高尔夫球场</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Top 1</h3>
+            <div class="thumbnail">
+                <p class="equalheight-2"><img src="{{ STATIC_URL }}img/golfcourse_rmgcw.jpg" alt=""></p>
+                <p class="equalheight-2-caption">皇家墨尔本高尔夫球场西场(Royal Melbourne Golf Club West)，澳洲排名第1，世界排名第9</p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3>Top 2</h3>
+            <div class="thumbnail">
+                <p class="equalheight-2"><img src="{{ STATIC_URL }}img/p_sydney.jpg" alt=""></p>
+                <p class="equalheight-2-caption">澳洲金斯顿石南高尔夫球俱乐部(Kingston heath Golf Club)，澳洲排名第2，世界排名28位</p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <h3>Top 3</h3>
+            <div class="thumbnail">
+                <p class="equalheight-2"><img src="{{ STATIC_URL }}img/activity.jpg" alt=""></p>
+                <p class="equalheight-2-caption">皇家墨尔本高尔夫球场西场</p>
+                <p><a class="btn btn-primary" href="#">查看详情</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{# this page does not need camera library #}
+{% block cameralibrary %}
+{% endblock %}
+
+
+{% block jquerymatchheight %}
+{{ block.super }}
+
+<script>
+$(function() {
+    $('.equalheight-1').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+});
+
+$(function() {
+    $('.equalheight-1-caption').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+});
+
+$(function() {
+    $('.equalheight-2').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+});
+
+$(function() {
+    $('.equalheight-2-caption').matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+});
+
+</script>
+{% endblock %}
+
