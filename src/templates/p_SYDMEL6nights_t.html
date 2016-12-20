@@ -1,0 +1,104 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <!-- itinerary -->
+        <div class="col-xs-12 col-sm-8">
+            <h1><span class="travel-bracket">私人定制</span>澳大利亚悉尼墨尔本6晚</h1>
+            <p><small>此行程仅供参考使用，我们将根据客户的实际需求制定最终的行程方案.</small></p>
+
+            <!-- here we use jquery camera wrap library -->
+            <div class="camera_wrap">
+                <!-- first picture -->
+                <div data-src="{{ STATIC_URL }}img/sydney-harbour-bridge-opera-house.jpg">
+                    <div class="camera_caption">澳大利亚悉尼歌剧院和海港大桥</div>
+                </div>
+
+                <!-- second picture -->
+                <div data-src="{{ STATIC_URL }}img/canberra-parliament-house.jpg">
+                    <div class="camera_caption">澳大利亚首都堪培拉国会大厦</div>
+                </div>
+
+                <!-- third picture -->
+                <div data-src="{{ STATIC_URL }}img/Melbourne-12-Apostles.jpg">
+                    <div class="camera_caption">澳大利亚墨尔本十二门徒</div>
+                </div>
+            </div>
+
+            <hr style="clear: both;">
+            <h1>行程安排</h1>
+
+            <h3>第1天 中国飞往悉尼</h3>
+            <p>搭乘晚班航机飞往悉尼</p>
+
+            <h3>第2天 抵达悉尼后市区观光</h3>
+            <p>早上抵达悉尼后，前往南半球最大的<span class="travel-bracket">悉尼鱼市场</span>。餐后，前往市区观光，欣赏造型独特的<span class="travel-bracket">悉尼歌剧院</span>。远眺坐落在悉尼港上的<span class="travel-bracket">悉尼海港大桥</span>；继而前往<span class="travel-bracket">麦考瑞夫人景观椅</span>，此为麦觉理总督夫人每日散步欣赏风景的驻足点。沿着风光明媚的Macquaries RD.和皇家植物园蜿蜒而行，造访庄严肃穆的<span class="travel-bracket">圣玛丽大教堂</span>。傍晚时分，可以乘<span class="travel-bracket">悉尼港库克船长游船</span>畅游全球最美丽的悉尼海港，可于游船上从不同角度欣赏悉尼歌剧院的美丽、远眺悉尼大桥、悉尼塔，畅游最美丽的海港城市, 于船上享用三道式套餐。游毕后返回酒店休息。</p>
+
+            <h3>第3天 悉尼蓝山一日游</h3>
+            <p>早餐后，乘车前往澳大利亚著名的风景区<span class="travel-bracket">蓝山国家公园</span>。因为空气中弥漫着一种由桉树脂挥发的蓝光，固命名为蓝山。首先前往<span class="travel-bracket">Echo Point</span>，此处是拍摄<span class="travel-bracket">三姐妹峰</span>的最佳点。搭乘<span class="travel-bracket">蓝山缆车(美景世界）</span>近距离欣赏蓝山景色。晚餐后，返回酒店休息。</p>
+
+            <h3>第4天 悉尼史蒂芬港一日游</h3>
+            <p>早餐后，驱车前往史蒂芬港乘坐<span class="travel-bracket">观鲸船</span>观赏鲸鱼和海豚，并在游船上享用自助午餐。夏季时还可以着泳衣坐在船尾拥抱大海。继而前往安娜湾乘坐四驱车进入长达27公里的大自然沙漠玩<span class="travel-bracket">史蒂芬港滑沙</span>。</p>
+
+            <h3>第5天 墨尔本观赏企鹅回巢</h3>
+            <p>酒店享用早餐后，搭机飞往澳大利亚第二大城市，也是世界级的花园城市—墨尔本。出发前往菲利普岛沿途探索<span class="travel-bracket">特色农场</span>和<span class="travel-bracket">考拉保育中心</span>。傍晚到达<span class="travel-bracket">菲利普岛</span>观赏全世界最小的企鹅回巢经过。大约十点左右返回墨尔本市区，返回酒店休息。</p>
+
+            <h3>第6天 墨尔本大洋路和十二门徒观光</h3>
+            <p>酒店享用早餐后，驱车前往<span class="travel-bracket">大洋路</span>。把大洋路视为澳大利亚维多利亚州的镇州之宝，绝不为过。它将海洋与陆地完美结合的杰作分享给世人，实为一项叹为观止的世界奇观！沿途奇景迭现，惊涛拍岸的断崖，鸟语充盈的雨林，削天峭壁，静谧海滩，美轮美奂的海岸线，更错落致的巨岩，成为鬼斧神工造的人间仙境。千百年来，这里的奇岩怪石与蓝色大海激情相拥，在时空变换中，勾勒出大自然最神奇瑰丽的旷世杰作，震撼着每位前来游览的游客。其中<span class="travel-bracket">十二使徒岩</span>的断崖奇景更是大洋路上的一绝。晚餐后，返回酒店休息。</p>
+
+            <h3>第7天 墨尔本市区观光</h3>
+            <p>酒店享用早餐后，参观澳洲第一个<span class="travel-bracket">国会大厦</span>，<span class="travel-bracket">圣帕特里克大教堂</span>，<span class="travel-bracket">库克船长故居</span>等。继而乘坐特别游船游览亚拉河两岸风光，然后登上南半球最高<span class="travel-bracket">尤利卡观景台</span>达88层，可360度欣赏全墨尔本景色。之后前往<span class="travel-bracket">水族馆</span>，<span class="travel-bracket">唐人街</span>参观及自由活动。游览全澳洲最大的<span class="travel-bracket">皇冠赌场</span>。</p>
+
+            <h3>第8天 墨尔本飞回中国</h3>
+            <p>酒店享用早餐后，前往机场，结束八天的旅程。</p>
+
+            <hr>
+            <h1>产品费用：</h1>
+            <ul>
+                <li>一个家庭费用（两大一小）：AUD$3820起</li>
+                <li>两个家庭费用（四大两小）：AUD$4950起</li>
+            </ul>
+
+            <h3>费用包含:</h3>
+            <ul>
+                <li>全程4星级酒店一间标准双人间住宿</li>
+                <li>地面交通：8座商务车</li>
+                <li>全程1名中文导游兼司机</li>
+                <li>全程西式早餐</li>
+            </ul>
+
+            <h3>费用不含:</h3>
+            <ul>
+                <li>全程自费景点门票费用</li>
+                <li>基本用车时间8-10hrs，超时费用为AUD$60/hr</li>
+                <li>导游小费每人每天AUD$5</li>
+                <li>国际机票和澳洲境内机票费用</li>
+                <li>客人任何私人花费</li>
+                <li>旅游保险</li>
+            </ul>
+
+            <h3>注意事项:</h3>
+            <ul>
+                <li>本公司保留修改行程，取消或替换旅游项目，缩短或者延长旅程的权利</li>
+                <li>若遇任何机械故障，天气因素等不可抗力影响下早成的任何伤亡或意外事件，本公司改不负责，不予赔偿，特此建议客人购买旅游保险。</li>
+            </ul>
+
+            <p>更多详情请 <a class="btn btn-primary" href="./contact.html">联系我们</a>。
+        </div>
+
+        <!-- aside not visible on mobile device -->
+        <div class="col-sm-4 hidden-xs">
+            <h1>其他私人定制</h1>
+            <ul>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
