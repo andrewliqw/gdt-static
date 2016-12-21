@@ -1,0 +1,92 @@
+{% extends "./base_itinerary.html" %}
+
+{% block itinerary_title %}
+<span class="travel-bracket">高尔夫</span>澳大利亚悉尼高尔夫休闲之旅
+{% endblock %}
+
+{% block itinerary_photo %}
+<!-- here we use jquery camera wrap library -->
+<div class="camera_wrap">
+    <!-- first picture -->
+    <div data-src="{{ STATIC_URL }}img/golf_st_michaels_small.jpg">
+        <div class="camera_caption">St Michaels 球场</div>
+    </div>
+
+    <!-- second picture -->
+    <div data-src="{{ STATIC_URL }}img/golf_nsw_Clubhouse18th_small.jpg">
+        <div class="camera_caption">新南威尔士高尔夫俱乐部球场</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block itinerary %}
+<h3>第1天 中国&#9992;澳大利亚悉尼</h3>
+<p>中国机场集合，搭乘直航飞机前往澳大利亚悉尼。</p>
+
+<h3>第2天 自由活动和修养精神</h3>
+{% comment %}
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+        <p><img class="img-responsive" src="{{ STATIC_URL }}img/golf_melbourne_day2.jpg"></p>
+    </div>
+</div>
+{% endcomment %}
+<p>悉尼全程导游接机后，乘坐高档商务车前往五星级酒店（香格里拉或同等级）。导游协助办理酒店入住手续后，客人自由活动，充分修养精神为打球做好准备。</p>
+{% comment %}
+<h3>第2天 悉尼市区观光</h3>
+<p>早上抵达悉尼后，前往南半球最大的鱼市场<span class="travel-bracket">悉尼渔人码头</span>参观，并享用鲜美的海鲜午餐（费用自理）。午餐后前往市区观光，欣赏造型独特的<span class="travel-bracket">悉尼歌剧院</span>。远眺坐落在悉尼港上的<span class="travel-bracket">悉尼海港大桥</span>；继而前往<span class="travel-bracket">麦考瑞夫人景观椅</span>，此为麦觉理总督夫人每日散步欣赏风景的驻足点。沿着风光明媚的Macquaries RD.和皇家植物园蜿蜒而行，造访庄严肃穆的<span class="travel-bracket">圣玛丽大教堂</span>。</p>
+{% endcomment %}
+
+<h3>第3天 新南威尔士高尔夫俱乐部球场</h3>
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+        <p><img class="img-responsive" src="{{ STATIC_URL }}img/golf_nsw_Clubhouse18th_small.jpg"></p>
+    </div>
+</div>
+<p>早餐过后，前往澳洲排名第5，世界排名第34的新南威尔士高尔夫俱乐部（NSW Golf Course）球场。这是一个标准的林克斯（Links）球场。该球场是由艾利斯特-麦肯兹设计，被《高尔夫杂志》誉为世界最好的50家高尔夫球场之一。新南威尔士高尔夫俱乐部球场距悉尼20分钟的车程，坐落在布坦尼湾(植物海湾)海角的北端，得天独厚的地理位置让人们可以欣赏到太平洋和海岸线的壮观景色。新南威尔士高尔夫俱乐部球场四周由国家公园所围绕，滨临太平洋海岸线，有着陡峭的悬崖和起伏的地面，球手可以欣赏到太平洋美丽的风光，同时也给球手带来了特别的挑战：球场上的风向变幻莫测，甚至两个球的风向也会迥然不同。因此，球手会面临诸多时刻变化的困难局面。
+</p>
+
+<h3>第4天 St Michaels 高尔夫俱乐部球场</h3>
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+        <p><img class="img-responsive" src="{{ STATIC_URL }}img/golf_st_michaels_small.jpg"></p>
+    </div>
+</div>
+<p>早餐过后，前往St Michaels 高尔夫俱乐部(St Michaels Golf Club)球场。此球场比邻美丽的海岸线，坐落于Little Bay 的海滨，距离悉尼市十三公里。可以在此欣赏海岸的最佳景色，由于其绝佳的地理位置，置身其中，极目远眺，太平洋的壮观美景尽收眼底，微微的海风更能使您充分享受到挥杆的乐趣。St Michaels高尔夫俱乐部球场独特之处在于它是高尔夫锦标赛的比赛场地，是澳大利亚最好的50家球场之一。在过去的二十年中曾多次成功举办了澳大利亚职业高尔夫巡回赛(Australian P.G.A.)和新南威尔州高尔夫公开赛(N.S.W. Open)。球场18洞72杆，球道总长6266米，设计极富挑战性和刺激性。</p>
+
+<h3>第5天：悉尼&#9992;飞回中国</h3>
+<p>早餐过后，自由活动。下午酒店集合，送机场。乘飞机返回中国，结束愉快的高尔夫之旅。</p>
+{% endblock %}
+
+{% block fee_table %}
+<table class="table centered-table">
+    <tr class="warning"><td>1人/房</th><td>2人/房</th></tr>
+    <tr><td>AUD$3198</td><td>AUD$2398</td></tr>
+</table>
+{% endblock %}
+
+{% block fee_including %}
+<ul>
+    <li>澳大利亚悉尼3晚国际标准五星级酒店（香格里拉或同等级）住宿，包含早餐。</li>
+    <li>两场顶级高尔夫球场果岭费，球场包括新南威尔士高尔夫俱乐部球场（NSW Golf Course），St Michaels高尔夫俱乐部球场。</li>
+    <li>全程高端奔驰商务用车。</li>
+    <li>全程普通话导游。</li>
+</ul>
+{% endblock %}
+
+{% block fee_excluding %}
+<ul>
+    <li>国际往返机票及机场税。</li>
+    <li>导游和司机小费，10澳元/人/天。</li>
+    <li>全程午餐和晚餐（可根据客户喜好推荐预定）。</li>
+    <li>旅游保险（强烈建议购买）。</li>
+    <li>各类自费项目。</li>
+</ul>
+{% endblock %}
+
+{% block aside_list %}
+<h1>其他高尔夫休闲之旅</h1>
+<ul>
+    <li><a href="./golf_melbourne.html"><span class="travel-bracket">高尔夫</span>澳大利亚墨尔本高尔夫休闲之旅</a></li>
+</ul>
+{% endblock %}

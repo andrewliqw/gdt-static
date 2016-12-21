@@ -1,0 +1,94 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <!-- itinerary column -->
+        <div class="col-xs-12 col-sm-8">
+            <h1>{% block itinerary_title %}<span class="travel-bracket">私人定制</span>行程名称{% endblock %}</h1>
+            <p><small class="bg-warning">此行程仅供参考，我们将根据客户的实际需求制定最终的行程方案.</small></p>
+
+            {% block itinerary_photo %}
+            <!-- here we use jquery camera wrap library -->
+            <div class="camera_wrap">
+                <!-- first picture -->
+                <div data-src="{{ STATIC_URL }}img/sydney-harbour-bridge-opera-house.jpg">
+                    <div class="camera_caption">澳大利亚悉尼歌剧院和海港大桥</div>
+                </div>
+
+                <!-- second picture -->
+                <div data-src="{{ STATIC_URL }}img/canberra-parliament-house.jpg">
+                    <div class="camera_caption">澳大利亚首都堪培拉国会大厦</div>
+                </div>
+
+                <!-- third picture -->
+                <div data-src="{{ STATIC_URL }}img/Melbourne-12-Apostles.jpg">
+                    <div class="camera_caption">澳大利亚墨尔本十二门徒</div>
+                </div>
+            </div>
+            {% endblock %}
+
+            <hr style="clear: both;">
+            <h1 class="text-main">行程安排</h1>
+
+            {% block itinerary %}
+            {% endblock %}
+
+            <hr>
+            <h1>费用标准：</h1>
+            {% block fee_table %}
+            <table class="table text-center">
+                <tr class="warning"><td>1人/房</th><td>2人/房</th></tr>
+                <tr><td>AUD$3198</td><td>AUD$2398</td></tr>
+            </table>
+            {% endblock %}
+
+            <h3>费用包含:</h3>
+            {% block fee_including %}
+            <ul>
+                <li>全程4星级酒店一间标准双人间住宿</li>
+                <li>地面交通：8座商务车</li>
+                <li>全程1名中文导游兼司机</li>
+                <li>全程西式早餐</li>
+            </ul>
+            {% endblock %}
+
+            <h3>费用不含:</h3>
+            {% block fee_excluding %}
+            <ul>
+                <li>全程自费景点门票费用</li>
+                <li>基本用车时间8-10hrs，超时费用为AUD$60/hr</li>
+                <li>导游小费每人每天AUD$5</li>
+                <li>国际机票和澳洲境内机票费用</li>
+                <li>客人任何私人花费</li>
+                <li>旅游保险</li>
+            </ul>
+            {% endblock %}
+
+            <h3>注意事项:</h3>
+            <ul>
+                <li>本公司保留修改行程，取消或替换旅游项目，缩短或者延长旅程的权利</li>
+                <li>若遇任何机械故障，天气因素等不可抗力影响下早成的任何伤亡或意外事件，本公司改不负责，不予赔偿，特此建议客人购买旅游保险。</li>
+            </ul>
+
+            <p>更多详情请 <a class="btn btn-primary" href="./contact.html">联系我们</a>。
+
+        </div>
+
+        <!-- aside not visible on mobile device -->
+        <div class="col-sm-4 hidden-xs">
+            {% block aside_list %}
+            <h1>其他私人定制</h1>
+            <ul>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+                <li><a href="#"><span class="travel-bracket">私人定制</span>悉尼墨尔本6晚</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}
