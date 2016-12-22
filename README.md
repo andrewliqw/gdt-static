@@ -13,6 +13,23 @@ the "include" problem: it is difficult to DIRECTLY include a HTML file into
 another HTML file. Compared to PHP include method, the inheritance and block
 override from Django template language make this method very flexible.
 
+```
+src
+  |--templates
+       |--base.html
+       |--base_itinerary.html
+       |--contact_t.html
+       |--golf_melbourne_t.html
+       |--golf_sydney_t.html
+       |--golf_t.html
+       |--index_t.html
+       |--navbar_t.html
+       |--p_SYNMEL6nights_t.html
+       |--p_SYDOOL6nights_t.html
+       |--personlized_t.html
+       |--study_t.html
+```
+
 All of template files are inside the src/templates directory. The Python script
 gen.py is used to generate the final static pages. To use this python script, you
 need install Django first:
