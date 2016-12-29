@@ -15,17 +15,17 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    "static_level",
+    "relative_level",
     type=int,
-    help="level of static directory relative to template file"
+    help="level of current template file relative to index page"
 )
 
 args = parser.parse_args()
 
-if args.static_level == 0:
-    static_url = "."
-elif args.static_level > 0:
-    static_url = "../" * args.static_level
+if args.relative_level == 0:
+    relative_url = "."
+elif args.relative_level > 0:
+    relative_url = "../" * args.relative_level
 else:
     raise ValueError("level should be >=0")
 
@@ -36,7 +36,8 @@ django_engine = Engine(
 )
 
 context = Context({
-    "STATIC_URL": os.path.join(static_url, "static", ""),
+    "RELATIVE_URL": os.path.join(relative_url, ""),
+    "STATIC_URL": os.path.join(relative_url, "static", ""),
     # CURRENT_FILE used for navbar
     "CURRENT_FILE": os.path.basename(args.template_file),
 })
