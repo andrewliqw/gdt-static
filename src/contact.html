@@ -15,8 +15,6 @@
         <!-- bootstrap javascript must be after jquery -->
         <script src="./static/lib/bootstrap/bootstrap3.3.7/js/bootstrap.min.js"></script>
 
-        
-
         <!-- jquery plugin camera -->
         <link rel="stylesheet" href="./static/lib/jquery_camera/camera.css">
 
@@ -48,16 +46,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html"><img  src="./static/img/galaxyDragonLogo.png"><p>Galaxy Dragon Travel<br>澳洲龙行天下旅游公司</p></a>
+            <a class="navbar-brand" href="./index.html"><img  src="./static/img/galaxyDragonLogo_100x75.png"><p>Galaxy Dragon Travel<br>澳洲龙行天下旅游公司</p></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav">
                 <li><a href="./index.html">首页</a></li>
-                <li><a href="#">私人定制</a></li>
-                <li><a href="#">高尔夫</a></li>
-                <li><a href="#">插班留学</a></li>
+                <li><a href="./personalized.html">私人定制</a></li>
+                <li><a href="./golf.html">高尔夫</a></li>
+                <li><a href="./study.html">插班留学</a></li>
                 <li class="active"><a href="./contact.html">联系我们</a></li>
             </ul>
         </div>
@@ -66,7 +64,7 @@
 
         
 
-        <div class="bg-primary text-center container"> 
+        <div class="bg-primary text-center container">
             <h1>我们的使命</h1>
             <p class="h3">以客户为中心，以奋斗者为本，长期坚持艰苦奋斗，服务于世界上每位华人游客。</p>
             <p>以客户为中心是长期艰苦奋斗的方向；艰苦奋斗是实现以客户为中心的手段和途径；以奋斗者为本是驱动长期艰苦奋斗的活力源泉，是保持以客户为中心的内在动力。</p>
@@ -78,10 +76,10 @@
     <h1>公司官方微信<small> 扫描二维码联系我们</small></h1>
     <div class="row">
         <div class="col-sm-3">
-            <p class="h4"><img src="./static/img/wechat-logo.png" style="width: 20px; height: 20px;"> 微信号：Galaxydragontravel</p>
+            <p class="h4"><img src="./static/img/wechat_logo_200x200.png" style="width: 20px; height: 20px;"> 微信号：Galaxydragontravel</p>
         </div>
         <div class="col-sm-4">
-            <p><img class="img-responsive" src="./static/img/galaxydragontravel_wechat_qr_code.jpg"> </p>
+            <p><img class="img-responsive" src="./static/img/galaxydragontravel_wechat_qr_code_430x430.jpg"> </p>
         </div>
     </div>
 
@@ -103,7 +101,7 @@
     <br>
     <div class="row">
         <div class="col-sm-8">
-            <p><img class="img-responsive" src="./static/img/company_address_in_google_map.png"></p>
+            <p><img class="img-responsive" src="./static/img/company_address_in_google_map_800x450.jpg"></p>
         </div>
     </div>
 </div>
@@ -130,14 +128,9 @@
         
 
 
-        <script>
-            $(document).ready(function(){
-              $(".nav a").on("click", function(){
-                $(".nav").find(".active").removeClass("active");
-                $(this).parent().addClass("active");
-              });
-            });
-        </script>
+        
+        <script src="./static/lib/jquery-match-height/0.7.0/jquery.matchHeight-min.js"></script>
+        
     </body>
 </html>
 
