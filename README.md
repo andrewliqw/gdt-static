@@ -16,16 +16,21 @@ override from Django template language make this method very flexible.
 ```
 src
   |--templates
+       |--golf
+            |--golf_melbourne_t.html
+            |--golf_sydney_t.html
+       |--internal
+            |--SYD
+                 |--blmt_t.html
+       |--personlized_itinerary
+            |--p_SYNMEL6nights_t.html
+            |--p_SYDOOL6nights_t.html
        |--base.html
        |--base_itinerary.html
        |--contact_t.html
-       |--golf_melbourne_t.html
-       |--golf_sydney_t.html
        |--golf_t.html
        |--index_t.html
        |--navbar_t.html
-       |--p_SYNMEL6nights_t.html
-       |--p_SYDOOL6nights_t.html
        |--personlized_t.html
        |--study_t.html
 ```
@@ -38,4 +43,4 @@ $ python3 -m pip install django
 
 Once the Django is installed properly, run gen.py to generate the HTML file:
 
-$ python3 gen.py src/templates/index_t.html > src/index.html
+$ python3 gen.py src/templates/index_t.html 0 > src/index.html
